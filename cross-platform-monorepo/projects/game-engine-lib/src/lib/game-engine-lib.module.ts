@@ -1,16 +1,19 @@
 import { NgModule } from '@angular/core';
-import { GameEngineLibComponent } from './game-engine-lib.component';
+import { Piece } from './game-engine-lib.component';
+import { BoardComponent } from './components/board/board.component';
+import { CommonModule } from '@angular/common';
 
 
 
 @NgModule({
   declarations: [
-    GameEngineLibComponent
+    // Piece,
+    BoardComponent
   ],
-  imports: [
+  imports: [CommonModule
   ],
   exports: [
-    GameEngineLibComponent
+    BoardComponent
   ]
 })
 export class GameEngineLibModule { }
